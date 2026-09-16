@@ -1,0 +1,56 @@
+<style>
+  
+  @keyframes colorZoom {
+    0% {
+      color: black;
+      transform: scale(1);
+    }
+    50% {
+      color: white;
+      transform: scale(0.9);
+    }
+    100% {
+      color: black;
+      transform: scale(1);
+    }
+  }
+  
+  /* Source: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/rotate */
+  @keyframes test {
+    0% {
+      color: pink;
+      rotate: 360deg;
+    }
+    50% {
+      color: red;
+    }
+    100% {
+      color: pink;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    padding: 20px;
+    
+    animation-name: colorZoom;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  h2 {
+    text-align: center;
+    padding: 20px;
+    animation-name: test;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+      
+      
+  }
+
+</style>
+
+
+<h1>Welcome to my Home Page!</h1>
+<h2>Jarrette was here</h2>
