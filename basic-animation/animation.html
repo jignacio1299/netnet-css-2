@@ -1,56 +1,100 @@
-<style>
-  
-  @keyframes colorZoom {
-    0% {
-      color: black;
-      transform: scale(1);
-    }
-    50% {
-      color: white;
-      transform: scale(0.9);
-    }
-    100% {
-      color: black;
-      transform: scale(1);
-    }
-  }
-  
-  /* Source: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/rotate */
-  @keyframes test {
-    0% {
-      color: pink;
-      rotate: 360deg;
-    }
-    50% {
-      color: red;
-    }
-    100% {
-      color: pink;
-    }
-  }
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <style>
+      <link rel="stylesheet" href="mystyle.css">
+      @keyframes color-zoom {
+        0% {
+          color: black;
+          transform: scale(1);
+        }
+        50% {
+          color: white;
+          transform: scale(0.9);
+        }
+        100% {
+          color: black;
+          transform: scale(1);
+        }
+      }
 
-  h1 {
-    text-align: center;
-    padding: 20px;
-    
-    animation-name: colorZoom;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+      /* Source: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/rotate */
+      
+
+      h1 {
+        text-align: center;
+        padding: 20px;
+
+        animation-name: colorZoom;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+      @keyframes orbit {
+  0% {
+    rotate: 360deg;
   }
-  h2 {
-    text-align: center;
-    padding: 20px;
-    animation-name: test;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+  animation-name: orbit;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+
+}
       
       
-  }
+      .my-name {
+        margin: 0 auto;
+        
+      }
 
-</style>
+      .planets {
+        background-color: red;
+        height: 200px;
+        width: 200px;
+        border-radius: 2000px;
+        
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+        
+        animation-name: orbit;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      .mercury {
+        background-color: brown;
+        width: 20px;
+        height: 20px;
+        border-radius: 200px;
+        position: fixed
+          
+/*           background: red;
+    position: relative;
+    top: 60px;
+    left: 60px; */
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to my Home Page!</h1>
+    <h2>Jarrette</h2>
+
+      <div class="planets">
+      Jarrette
+      <div class="mercury"></div>
+    </div>
+  </body>
+</html>
 
 
-<h1>Welcome to my Home Page!</h1>
-<h2>Jarrette was here</h2>
+
+
+
